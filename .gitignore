@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Data
+data/*.csv
+data/*.txt
+data/*.log
+data/*.npy  # If you generate large processed data files that shouldn't be version controlled
+
+# Models
+models/*.h5
+models/*.tflite
+models/*_edgetpu.tflite
+models/*.pb
+
+# Logs and Outputs
+logs/
+results/
+output/
