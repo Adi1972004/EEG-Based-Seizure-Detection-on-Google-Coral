@@ -126,37 +126,6 @@ Minimum Power Consumption: 0.96 W
 
 The power consumption distribution reveals consistent low-power operation:
 
-Project Structure (Suggested)
-.
-├── README.md
-├── .gitignore
-├── LICENSE
-├── images/                   # New folder for images
-│   ├── confusion_matrix.jpeg
-│   ├── coral_board.jpg
-│   ├── coral_dev_board_block_diagram.PNG
-│   ├── inference_on_coral_board.jpg
-│   ├── inference_time_distribution.jpeg
-│   ├── power_usage_distribution.jpeg
-│   └── seizure_model_coral_analysis.jpeg
-├── data/
-│   └── raw_eeg_data/
-│   └── preprocessed_eeg_data/
-│       └── your_eeg_test_data.npy  # Example preprocessed data
-├── models/
-│   └── trained_model.h5            # Original Keras/TF model
-│   └── trained_model.tflite        # Converted TFLite model
-│   └── trained_model_edgetpu.tflite # Compiled for Edge TPU
-├── src/
-│   ├── main_inference.py           # Main script for running inference on Coral
-│   ├── model.py                    # DCNN model definition (training part)
-│   ├── preprocessing.py            # EEG data preprocessing functions
-│   ├── train.py                    # Script for model training (if applicable)
-│   └── utils.py                    # Utility functions
-├── notebooks/
-│   └── model_training_and_quantization.ipynb # Jupyter notebook for development
-└── requirements.txt                # Python dependencies
-
 Contributing
 Contributions are welcome! Please feel free to open issues or submit pull requests.
 
